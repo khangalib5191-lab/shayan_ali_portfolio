@@ -7,7 +7,7 @@
     <title>Shayan Ali | Full-Stack Engineer & AI Developer </title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('assets/shayan-ali.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/.png') }}">
 
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
