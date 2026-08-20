@@ -50,5 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    console.log("M. Lateef Professional Portfolio | Engineered for Clarity & Precision.");
+    console.log("Shayan Ali Professional Portfolio | Engineered for Clarity & Precision.");
 });

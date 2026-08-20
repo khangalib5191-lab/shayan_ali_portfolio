@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M Lateef | Full-Stack Engineer & AI Developer </title>
+    <title>Shayan Ali | Full-Stack Engineer & AI Developer </title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('assets/lateef.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/shayan-ali.png') }}">
 
     <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
     <div id="preloader">
         <div class="spinner-wrapper">
             <div class="spinner"></div>
-            <div class="spinner-text">M. LATEEF</div>
+            <div class="spinner-text">Shayan Ali</div>
         </div>
     </div>
 
@@ -39,7 +39,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
         <div class="container">
             <a class="navbar-brand fw-extrabold tracking-wide" href="#">
-                <span class="text-gradient">M. LATEEF</span>
+                <span class="text-gradient">Shayan Ali</span>
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
@@ -73,8 +73,8 @@
                         Engineering Sophisticated <span class="text-gradient">Digital Solutions</span>
                     </h1>
                     <p class="lead text-cool-slate mb-4 max-w-650 fw-medium">
-                        Hi, I'm <strong>M Lateef</strong>—a senior-ready developer with 2+ years specialized in turning
-                        ambition into reality using <strong>Laravel, Django, Flutter, and Bootstrap</strong>.
+                        Hi, I'm <strong>Shayan Ali</strong>—a senior-ready developer with 2+ years specialized in turning
+                        ambition into reality using <strong>Laravel, Django, Flutter, and Bootstrap, react js , c++ , javascript, python</strong>.
                     </p>
                     <div
                         class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3 mb-5">
@@ -108,9 +108,9 @@
                     <div class="profile-card-wrapper position-relative d-inline-block">
                         <div class="profile-card-glow"></div>
                         <div class="glass-card p-3 rounded-5 border-glow text-center position-relative z-1">
-                            <img src="{{ asset('assets/lateef.png') }}" alt="M Lateef - Full Stack Developer"
+                            <img src="{{ asset('assets/shayan-ali.png') }}" alt="Shayan Ali - Full Stack Developer"
                                 class="img-fluid rounded-4 profile-img mb-3 shadow-2xl">
-                            <h4 class="fw-extrabold mb-1 text-white">M. Lateef</h4>
+                            <h4 class="fw-extrabold mb-1 text-white">Shayan Ali</h4>
                             <p class="text-primary-cool fs-7 fw-semibold mb-2">Backend & Cross-Platform Engineer</p>
                             <div class="d-flex justify-content-center gap-2">
                                 <span class="badge badge-dark fs-8">Architecture</span>
@@ -171,8 +171,8 @@
                                 <span class="fs-8 text-muted ms-auto font-monospace">optimize.py</span>
                             </div>
                             <pre class="font-monospace fs-7 text-cool-slate mb-0"><code><span class="text-indigo-cool">class</span> <span class="text-cyan-cool">workflow_engine</span>:
-    <span class="text-indigo-cool">def</span> <span class="text-info">__init__</span>(self, developer="Lateef"):
-        self.stack = ["Laravel", "Django", "Flutter"]
+    <span class="text-indigo-cool">def</span> <span class="text-info">__init__</span>(self, developer="Shayan Ali"):
+        self.stack = ["Laravel", "Django", "Flutter", "React.js"]
         self.ai = ["Copilot", "Optimizers", "Refactors"]
         
     <span class="text-indigo-cool">def</span> <span class="text-info">build</span>(self, requirements):
@@ -192,52 +192,94 @@
             <div class="text-center max-w-650 mx-auto mb-5">
                 <span class="text-gradient fw-bold text-uppercase fs-7 tracking-wider">Expertise</span>
                 <h2 class="display-5 fw-extrabold text-white mt-1">Core Tech Ecosystem</h2>
-                <p class="text-cool-slate fw-medium">Industry-standard frameworks and languages I combine to build
-                    high-performance solutions.</p>
+                <p class="text-cool-slate fw-medium">A versatile ecosystem of frameworks, languages, and tools used to build modern digital products.</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="glass-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div
-                            class="icon-box mb-3 bg-danger-subtle text-danger mx-auto rounded-4 border border-danger border-opacity-10">
+                <!-- Laravel -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-danger-subtle text-danger mx-auto rounded-4 border border-danger border-opacity-10">
                             <i class="fa-brands fa-laravel fa-2x"></i>
                         </div>
                         <h5 class="fw-bold text-white mb-2">Laravel</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Enterprise PHP for robust REST APIs, secure authentication,
-                            and complex backend architecture.</p>
+                        <p class="fs-7 text-cool-slate mb-0">Powerful PHP framework for secure APIs, authentication, dashboards, and scalable backend systems.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="glass-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div
-                            class="icon-box mb-3 bg-primary-subtle text-primary-cool mx-auto rounded-4 border border-primary-cool border-opacity-10">
+
+                <!-- Django -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-primary-subtle text-primary-cool mx-auto rounded-4 border border-primary border-opacity-10">
                             <i class="fa-brands fa-python fa-2x"></i>
                         </div>
                         <h5 class="fw-bold text-white mb-2">Django</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Pragmatic Python framework engineered for extreme velocity
-                            and clean, structured data-driven apps.</p>
+                        <p class="fs-7 text-cool-slate mb-0">A high-level Python framework for clean, secure, and data-driven web applications.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="glass-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div
-                            class="icon-box mb-3 bg-info-subtle text-info mx-auto rounded-4 border border-info border-opacity-10">
+
+                <!-- Flutter -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-info-subtle text-info mx-auto rounded-4 border border-info border-opacity-10">
                             <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
                         </div>
                         <h5 class="fw-bold text-white mb-2">Flutter</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Google's UI toolkit for compiling natively high-fidelity
-                            cross-platform mobile applications.</p>
+                        <p class="fs-7 text-cool-slate mb-0">Cross-platform development for building polished mobile experiences from a single codebase.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="glass-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div
-                            class="icon-box mb-3 bg-purple-subtle text-purple-cool mx-auto rounded-4 border border-purple-cool border-opacity-10">
+
+                <!-- Bootstrap -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-purple-subtle text-purple-cool mx-auto rounded-4 border border-purple-cool border-opacity-10">
                             <i class="fa-brands fa-bootstrap fa-2x"></i>
                         </div>
                         <h5 class="fw-bold text-white mb-2">Bootstrap</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Fluid front-end framework for responsive UI design and
-                            efficient, production-ready web layouts.</p>
+                        <p class="fs-7 text-cool-slate mb-0">Responsive UI development with production-ready components and flexible layout utilities.</p>
+                    </div>
+                </div>
+
+                <!-- React.js -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-info-subtle text-info mx-auto rounded-4 border border-info border-opacity-10">
+                            <i class="fa-brands fa-react fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">React.js</h5>
+                        <p class="fs-7 text-cool-slate mb-0">Component-based interfaces for fast, interactive, and maintainable modern web applications.</p>
+                    </div>
+                </div>
+
+                <!-- C++ -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-primary-dark text-primary-cool mx-auto rounded-4 border border-primary border-opacity-25">
+                            <i class="fa-solid fa-code fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">C++</h5>
+                        <p class="fs-7 text-cool-slate mb-0">Performance-focused programming for efficient systems, algorithms, and problem solving.</p>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-warning-subtle text-warning mx-auto rounded-4 border border-warning border-opacity-25">
+                            <i class="fa-brands fa-js fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">JavaScript</h5>
+                        <p class="fs-7 text-cool-slate mb-0">Dynamic client-side and server-side development for modern interactive applications.</p>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
+                        <div class="icon-box mb-3 bg-success-subtle text-success-cool mx-auto rounded-4 border border-success border-opacity-25">
+                            <i class="fa-brands fa-python fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-white mb-2">Python</h5>
+                        <p class="fs-7 text-cool-slate mb-0">Versatile programming for automation, backend development, data processing, and AI workflows.</p>
                     </div>
                 </div>
             </div>
@@ -368,8 +410,8 @@
                             </div>
                             <div>
                                 <span class="fs-8 text-cool-slate d-block">Request a Consultation</span>
-                                <a href="mailto:khangalib5191@gmail.com"
-                                    class="text-white text-decoration-none fw-semibold">khangalib5191@gmail.com</a>
+                                <a href="mailto:shayangutum@gmail.com"
+                                    class="text-white text-decoration-none fw-semibold">shayangutum@gmail.com</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center gap-3">
@@ -385,7 +427,7 @@
                     </div>
 
                     <div class="d-flex gap-3 fs-5 justify-content-center justify-content-lg-start">
-                        <a href="{{'https://github.com/khangalib5191-lab'}}" target="_blank"
+                        <a href="{{'https://github.com/shayangutum-cell'}}" target="_blank"
                             class="icon-box-sm bg-dark-subtle text-cool-slate border border-slate rounded-circle hover-glow"><i
                                 class="fa-brands fa-github fs-6"></i></a>
                         <a href="#" target="_blank"
@@ -457,7 +499,7 @@
     <!-- Footer -->
     <footer class="py-4 bg-obsidian-deeper border-top border-slate text-center">
         <div class="container">
-            <p class="fs-7 text-cool-slate mb-0">&copy; <span id="year"></span> <strong>M. Lateef</strong>. Engineered
+            <p class="fs-7 text-cool-slate mb-0">&copy; <span id="year"></span> <strong>Shayan Ali</strong>. Engineered
                 for clarity, speed, and client value.</p>
         </div>
     </footer>
