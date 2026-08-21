@@ -23,7 +23,7 @@ class ContactController extends Controller
 
         // 2. Try sending email safely
         try {
-            Mail::to('khangalib5191@gmail.com')->send(new ContactFormMail($validated));
+            Mail::to('shayangutum@gmail.com')->send(new ContactFormMail($validated));
         } catch (\Exception $e) {
             // Log the network error without breaking the user's page experience
             Log::error('Failed to send mail: ' . $e->getMessage());
