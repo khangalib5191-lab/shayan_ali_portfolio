@@ -1,54 +1,229 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // 1. Core Interactivity & Preloader Handler
+    /* ==========================================
+       PRELOADER
+    ========================================== */
+
     const preloader = document.getElementById("preloader");
+
     if (preloader) {
-        setTimeout(() => {
-            preloader.style.opacity = "0";
-            preloader.style.visibility = "hidden";
-        }, 1200); 
+
+        window.addEventListener("load", () => {
+
+            setTimeout(() => {
+
+                preloader.style.opacity = "0";
+                preloader.style.visibility = "hidden";
+
+            }, 500);
+
+        });
+
     }
 
-    // 2. Dynamic Year Updater for Footer
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
+
+    /* ==========================================
+       FOOTER YEAR
+    ========================================== */
+
+    const year = document.getElementById("year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
     }
 
-    // 3. Interactive Filterable Projects Tab
-    const filterButtons = document.querySelectorAll(".btn-filter");
-    const projectItems = document.querySelectorAll(".project-item");
+
+    /* ==========================================
+       PROJECT FILTERING
+    ========================================== */
+
+    const filterButtons =
+        document.querySelectorAll(".btn-filter");
+
+    const projectItems =
+        document.querySelectorAll(".project-item");
+
 
     filterButtons.forEach(button => {
+
         button.addEventListener("click", () => {
-            filterButtons.forEach(btn => btn.classList.remove("active"));
+
+            const filter =
+                button.dataset.filter;
+
+
+            /* Active button */
+
+            filterButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
             button.classList.add("active");
 
-            const filterValue = button.getAttribute("data-filter");
 
-            projectItems.forEach(item => {
-                if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
-                    item.style.display = "block";
-                    item.classList.add("animate-fade");
+            /* Filter projects */
+
+            projectItems.forEach(project => {
+
+                const category =
+                    project.dataset.category;
+
+
+                if (
+                    filter === "all" ||
+                    category === filter
+                ) {
+
+                    project.style.display = "block";
+
+                    project.classList.remove("animate-fade");
+
+                    void project.offsetWidth;
+
+                    project.classList.add("animate-fade");
+
                 } else {
-                    item.style.display = "none";
-                    item.classList.remove("animate-fade");
+
+                    project.style.display = "none";
+
                 }
+
             });
+
         });
+
     });
 
-    // 4. Contact Form Loading Feedback UI
-    const contactForm = document.getElementById("portfolio-contact-form");
+
+    /* ==========================================
+       CONTACT FORM LOADING STATE
+    ========================================== */
+
+    const contactForm =
+        document.getElementById("portfolio-contact-form");
+
+
     if (contactForm) {
+
         contactForm.addEventListener("submit", () => {
-            const submitBtn = contactForm.querySelector("button[type='submit']");
-            if (submitBtn) {
-                // UI feedback when standard form POST submits
-                submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin me-2 fs-7"></i>Sending Consultation Request...`;
+
+            const submitButton =
+                contactForm.querySelector(
+                    "button[type='submit']"
+                );
+
+
+            if (submitButton) {
+
+                submitButton.disabled = true;
+
+                submitButton.innerHTML = `
+                    <span class="button-text">
+                        <i class="fa-solid fa-spinner fa-spin"></i>
+                        Sending Message...
+                    </span>
+                `;
+
             }
+
         });
+
     }
 
-    console.log("Shayan Ali Professional Portfolio | Engineered for Clarity & Precision.");
+
+    /* ==========================================
+       ACTIVE NAVIGATION LINK
+    ========================================== */
+
+    const sections =
+        document.querySelectorAll("section, header");
+
+    const navLinks =
+        document.querySelectorAll(".nav-link");
+
+
+    const observer = new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    const id =
+                        entry.target.getAttribute("id");
+
+
+                    navLinks.forEach(link => {
+
+                        link.classList.remove("active");
+
+
+                        if (
+                            link.getAttribute("href") === `#${id}`
+                        ) {
+                            link.classList.add("active");
+                        }
+
+                    });
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.35
+        }
+
+    );
+
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+
+    /* ==========================================
+       CLOSE MOBILE NAV AFTER CLICK
+    ========================================== */
+
+    const navbarCollapse =
+        document.getElementById("navbarNav");
+
+
+    const mobileNavLinks =
+        document.querySelectorAll(
+            "#navbarNav .nav-link"
+        );
+
+
+    mobileNavLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            if (
+                window.innerWidth < 992 &&
+                navbarCollapse.classList.contains("show")
+            ) {
+
+                const collapse =
+                    bootstrap.Collapse.getInstance(navbarCollapse);
+
+                if (collapse) {
+                    collapse.hide();
+                }
+
+            }
+
+        });
+
+    });
+
+
+    console.log(
+        "Shayan Ali Portfolio — Ready."
+    );
+
 });

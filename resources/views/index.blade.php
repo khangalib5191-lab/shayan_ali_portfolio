@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shayan Ali | Full-Stack Engineer & AI Developer </title>
 
-    <!-- Favicon -->
+    <title>Shayan Ali | Full-Stack Developer</title>
+
     <link rel="icon" type="image/png" href="{{ asset('assets/shayan-ali.png') }}">
 
-    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap 5.3 CSS -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome 6.4 Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -27,487 +29,977 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-    <!-- Preloader -->
+    <!-- PRELOADER -->
     <div id="preloader">
-        <div class="spinner-wrapper">
-            <div class="spinner"></div>
-            <div class="spinner-text">Shayan Ali</div>
+        <div class="loader-content">
+            <div class="loader-mark">SA</div>
+            <span>LOADING PORTFOLIO</span>
         </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top portfolio-nav">
+
         <div class="container">
-            <a class="navbar-brand fw-extrabold tracking-wide" href="#">
-                <span class="text-gradient">Shayan Ali</span>
+
+            <a class="navbar-brand brand-logo" href="#about">
+                <span class="brand-mark">&lt;/&gt;</span>
+                Shayan Ali
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+
+            <button class="navbar-toggler custom-toggler border-0 shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-uppercase fs-7 fw-semibold gap-lg-3">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ai-advantage">AI Advantage</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Stack</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
                 </ul>
-                <div class="ms-lg-3 mt-3 mt-lg-0">
-                    <a href="#contact" class="btn btn-gradient-primary btn-sm rounded-pill px-4">Get In Touch</a>
-                </div>
+
+                <a href="#contact" class="nav-cta">
+                    Let's Work
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
             </div>
+
         </div>
+
     </nav>
 
-    <!-- Hero Section -->
-    <header id="about" class="hero-section d-flex align-items-center text-white position-relative">
-        <div class="hero-bg-glow"></div>
-        <div class="container py-5 position-relative z-1">
+
+    <!-- HERO -->
+    <header id="about" class="hero-section">
+
+        <div class="hero-grid"></div>
+
+        <div class="container hero-container">
+
             <div class="row align-items-center g-5">
-                <div class="col-lg-7 text-center text-lg-start">
-                    <div
-                        class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-card mb-4 border-glow">
+
+                <!-- HERO CONTENT -->
+                <div class="col-lg-7">
+
+                    <div class="availability-badge">
+
+                        <span class="status-dot"></span>
+
+                        Available for selected projects
+
                     </div>
-                    <h1 class="display-3 fw-extrabold mb-3 lh-sm tracking-tight text-white">
-                        Engineering Sophisticated <span class="text-gradient">Digital Solutions</span>
+
+                    <h1 class="hero-title">
+
+                        Building digital products that are
+
+                        <span>fast, scalable, and useful.</span>
+
                     </h1>
-                    <p class="lead text-cool-slate mb-4 max-w-650 fw-medium">
-                        Hi, I'm <strong>Shayan Ali</strong>—a senior-ready developer with 2+ years specialized in turning
-                        ambition into reality using <strong>Laravel, Django, Flutter, and Bootstrap, react js , c++ , javascript, python</strong>.
+
+                    <p class="hero-description">
+
+                        I'm <strong>Shayan Ali</strong>, a full-stack developer focused on
+                        building practical web applications, backend systems, and
+                        cross-platform experiences.
+
                     </p>
-                    <div
-                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3 mb-5">
-                        <a href="#projects" class="btn btn-gradient-primary btn-lg rounded-pill px-4 shadow-glow">
-                            <i class="fa-solid fa-code me-2"></i>Explore Work
+
+                    <div class="hero-actions">
+
+                        <a href="#projects" class="btn-primary-custom">
+
+                            View Projects
+
+                            <i class="fa-solid fa-arrow-down"></i>
+
                         </a>
-                        <a href="#contact" class="btn btn-glass btn-lg rounded-pill px-4">
-                            <i class="fa-solid fa-paper-plane me-2"></i>Get In Touch
+
+                        <a href="#contact" class="btn-secondary-custom">
+
+                            Contact Me
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
                         </a>
+
                     </div>
 
-                    <!-- Performance Stats -->
-                    <div class="row g-3 pt-4 border-top border-slate">
-                        <div class="col-4">
-                            <h3 class="fw-extrabold text-gradient mb-0">2+</h3>
-                            <p class="fs-7 text-cool-slate mb-0">Years Experience</p>
+
+                    <!-- STATS -->
+
+                    <div class="hero-stats">
+
+                        <div class="stat-item">
+
+                            <strong>2+</strong>
+
+                            <span>Years Learning & Building</span>
+
                         </div>
-                        <div class="col-4">
-                            <h3 class="fw-extrabold text-gradient mb-0">100%</h3>
-                            <p class="fs-7 text-cool-slate mb-0">On-Time Delivery</p>
+
+                        <div class="stat-item">
+
+                            <strong>8+</strong>
+
+                            <span>Technologies & Frameworks</span>
+
                         </div>
-                        <div class="col-4">
-                            <h3 class="fw-extrabold text-gradient mb-0">AI+</h3>
-                            <p class="fs-7 text-cool-slate mb-0">Enhanced Workflows</p>
+
+                        <div class="stat-item">
+
+                            <strong>100%</strong>
+
+                            <span>Focused on Clean Solutions</span>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <!-- Premium Profile Display -->
-                <div class="col-lg-5 text-center">
-                    <div class="profile-card-wrapper position-relative d-inline-block">
-                        <div class="profile-card-glow"></div>
-                        <div class="glass-card p-3 rounded-5 border-glow text-center position-relative z-1">
-                            <img src="{{ asset('assets/shayan-ali.png') }}" alt="Shayan Ali - Full Stack Developer"
-                                class="img-fluid rounded-4 profile-img mb-3 shadow-2xl">
-                            <h4 class="fw-extrabold mb-1 text-white">Shayan Ali</h4>
-                            <p class="text-primary-cool fs-7 fw-semibold mb-2">Backend & Cross-Platform Engineer</p>
-                            <div class="d-flex justify-content-center gap-2">
-                                <span class="badge badge-dark fs-8">Architecture</span>
-                                <span class="badge badge-dark fs-8">Performance</span>
+
+                <!-- PROFILE -->
+                <div class="col-lg-5">
+
+                    <div class="developer-card">
+
+                        <div class="developer-card-top">
+
+                            <span>developer.profile</span>
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
                             </div>
+
                         </div>
+
+                        <div class="developer-image-wrapper">
+
+                            <img
+                                src="{{ asset('assets/shayan-ali.png') }}"
+                                alt="Shayan Ali">
+
+                        </div>
+
+                        <div class="developer-info">
+
+                            <div>
+
+                                <span class="small-label">FULL-STACK DEVELOPER</span>
+
+                                <h3>Shayan Ali</h3>
+
+                            </div>
+
+                            <div class="verified-icon">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="developer-stack">
+
+                            <span>Laravel</span>
+                            <span>React</span>
+                            <span>Django</span>
+                            <span>Flutter</span>
+
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- AI Advantage Section -->
-    <section id="ai-advantage" class="py-5 bg-obsidian position-relative">
-        <div class="container py-lg-4">
-            <div class="glass-card p-4 p-md-5 rounded-5 border-glow">
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-6">
-                        <span class="text-gradient fw-bold text-uppercase fs-7 tracking-wider">The Innovation
-                            Edge</span>
-                        <h2 class="display-6 fw-extrabold text-white mt-2 mb-3">AI-Accelerated Software Engineering</h2>
-                        <p class="text-cool-slate mb-4">
-                            I leverage cutting-edge AI coding tools to optimize the <b>how</b> of
-                            development—accelerating rapid prototyping, automating testing protocols, and optimizing
-                            complex database architectures. This advanced workflow ensures:
-                        </p>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex align-items-start gap-3">
-                                <div
-                                    class="icon-box-sm bg-primary-dark text-primary-cool rounded-circle border border-primary border-opacity-25">
-                                    <i class="fa-solid fa-bolt fs-7"></i>
-                                </div>
-                                <div>
-                                    <h6 class="text-white fw-bold mb-1">Superior Delivery Velocity</h6>
-                                    <p class="fs-7 text-cool-slate mb-0">Rapid product turnarounds that outpace
-                                        traditional development without sacrificing structural integrity.</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-start gap-3">
-                                <div
-                                    class="icon-box-sm bg-primary-dark text-primary-cool rounded-circle border border-primary border-opacity-25">
-                                    <i class="fa-solid fa-shield-check fs-7"></i>
-                                </div>
-                                <div>
-                                    <h6 class="text-white fw-bold mb-1">Clean, Bug-Free Codebases</h6>
-                                    <p class="fs-7 text-cool-slate mb-0">Continuous integration of AI-powered static
-                                        analysis to maintain superior code quality and security.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="code-preview-card p-4 rounded-4 bg-black border border-slate">
-                            <div class="d-flex align-items-center gap-2 mb-3 border-bottom border-slate pb-3">
-                                <span class="dot bg-danger"></span>
-                                <span class="dot bg-warning"></span>
-                                <span class="dot bg-success"></span>
-                                <span class="fs-8 text-muted ms-auto font-monospace">optimize.py</span>
-                            </div>
-                            <pre class="font-monospace fs-7 text-cool-slate mb-0"><code><span class="text-indigo-cool">class</span> <span class="text-cyan-cool">workflow_engine</span>:
-    <span class="text-indigo-cool">def</span> <span class="text-info">__init__</span>(self, developer="Shayan Ali"):
-        self.stack = ["Laravel", "Django", "Flutter", "React.js"]
-        self.ai = ["Copilot", "Optimizers", "Refactors"]
-        
-    <span class="text-indigo-cool">def</span> <span class="text-info">build</span>(self, requirements):
-        # AI accelerates prototyping & testing
-        clean_code = self.ai.refactor(requirements)
-        <span class="text-indigo-cool">return</span> f"Optimized & Scalable: {clean_code}"</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Ecosystem -->
-    <section id="skills" class="py-5 bg-obsidian-deeper">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-650 mx-auto mb-5">
-                <span class="text-gradient fw-bold text-uppercase fs-7 tracking-wider">Expertise</span>
-                <h2 class="display-5 fw-extrabold text-white mt-1">Core Tech Ecosystem</h2>
-                <p class="text-cool-slate fw-medium">A versatile ecosystem of frameworks, languages, and tools used to build modern digital products.</p>
+    <!-- ABOUT / ENGINEERING -->
+    <section class="engineering-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">01 / HOW I WORK</span>
+
+                <h2>
+                    Practical engineering,
+                    <span>not unnecessary complexity.</span>
+                </h2>
+
             </div>
+
+
             <div class="row g-4">
-                <!-- Laravel -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-danger-subtle text-danger mx-auto rounded-4 border border-danger border-opacity-10">
-                            <i class="fa-brands fa-laravel fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Laravel</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Powerful PHP framework for secure APIs, authentication, dashboards, and scalable backend systems.</p>
+
+                <div class="col-lg-4">
+
+                    <div class="principle-card">
+
+                        <div class="principle-number">01</div>
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <h4>Structured Development</h4>
+
+                        <p>
+
+                            I focus on maintainable architecture, readable code,
+                            and systems that can grow with the project.
+
+                        </p>
+
                     </div>
+
                 </div>
 
-                <!-- Django -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-primary-subtle text-primary-cool mx-auto rounded-4 border border-primary border-opacity-10">
-                            <i class="fa-brands fa-python fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Django</h5>
-                        <p class="fs-7 text-cool-slate mb-0">A high-level Python framework for clean, secure, and data-driven web applications.</p>
+
+                <div class="col-lg-4">
+
+                    <div class="principle-card">
+
+                        <div class="principle-number">02</div>
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <h4>Efficient Workflow</h4>
+
+                        <p>
+
+                            Modern tools and AI-assisted workflows help accelerate
+                            research, testing, prototyping, and development.
+
+                        </p>
+
                     </div>
+
                 </div>
 
-                <!-- Flutter -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-info-subtle text-info mx-auto rounded-4 border border-info border-opacity-10">
-                            <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Flutter</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Cross-platform development for building polished mobile experiences from a single codebase.</p>
+
+                <div class="col-lg-4">
+
+                    <div class="principle-card">
+
+                        <div class="principle-number">03</div>
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h4>Built for Real Use</h4>
+
+                        <p>
+
+                            The goal is always a useful product — not just an
+                            attractive interface or a temporary demo.
+
+                        </p>
+
                     </div>
+
                 </div>
 
-                <!-- Bootstrap -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-purple-subtle text-purple-cool mx-auto rounded-4 border border-purple-cool border-opacity-10">
-                            <i class="fa-brands fa-bootstrap fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Bootstrap</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Responsive UI development with production-ready components and flexible layout utilities.</p>
-                    </div>
-                </div>
-
-                <!-- React.js -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-info-subtle text-info mx-auto rounded-4 border border-info border-opacity-10">
-                            <i class="fa-brands fa-react fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">React.js</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Component-based interfaces for fast, interactive, and maintainable modern web applications.</p>
-                    </div>
-                </div>
-
-                <!-- C++ -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-primary-dark text-primary-cool mx-auto rounded-4 border border-primary border-opacity-25">
-                            <i class="fa-solid fa-code fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">C++</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Performance-focused programming for efficient systems, algorithms, and problem solving.</p>
-                    </div>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-warning-subtle text-warning mx-auto rounded-4 border border-warning border-opacity-25">
-                            <i class="fa-brands fa-js fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">JavaScript</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Dynamic client-side and server-side development for modern interactive applications.</p>
-                    </div>
-                </div>
-
-                <!-- Python -->
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="glass-card tech-card p-4 rounded-4 text-center h-100 card-hover border-glow">
-                        <div class="icon-box mb-3 bg-success-subtle text-success-cool mx-auto rounded-4 border border-success border-opacity-25">
-                            <i class="fa-brands fa-python fa-2x"></i>
-                        </div>
-                        <h5 class="fw-bold text-white mb-2">Python</h5>
-                        <p class="fs-7 text-cool-slate mb-0">Versatile programming for automation, backend development, data processing, and AI workflows.</p>
-                    </div>
-                </div>
             </div>
+
         </div>
+
     </section>
 
-    <!-- Filterable Projects Section -->
-    <section id="projects" class="py-5 bg-obsidian">
-        <div class="container py-lg-5">
-            <div class="text-center max-w-650 mx-auto mb-4">
-                <span class="text-gradient fw-bold text-uppercase fs-7 tracking-wider">Portfolio</span>
-                <h2 class="display-5 fw-extrabold text-white mt-1">Featured Deliverables</h2>
-                <p class="text-cool-slate fw-medium">A curated selection of robust platforms engineered for business
-                    requirements.</p>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-label">02 / TECHNOLOGY STACK</span>
+
+                <h2>
+                    Tools I use to
+                    <span>build products.</span>
+                </h2>
+
             </div>
 
-            <!-- Category Filter -->
-            <div class="d-flex justify-content-center flex-wrap gap-2 mb-5 px-3">
-                <button class="btn btn-filter active rounded-pill px-4 fs-7" data-filter="all">All Deliverables</button>
-                <button class="btn btn-filter rounded-pill px-4 fs-7" data-filter="web">Web Applications</button>
-                <button class="btn btn-filter rounded-pill px-4 fs-7" data-filter="enterprise">Enterprise
-                    Systems</button>
-                <button class="btn btn-filter rounded-pill px-4 fs-7" data-filter="mobile">Mobile Software</button>
+
+            <div class="row g-3">
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon laravel">
+                            <i class="fa-brands fa-laravel"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>Laravel</h5>
+
+                            <p>PHP applications, APIs, authentication, dashboards and backend systems.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon python">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>Django & Python</h5>
+
+                            <p>Backend development, automation and data-driven applications.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon react">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>React.js</h5>
+
+                            <p>Interactive and component-based interfaces for modern applications.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon flutter">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>Flutter</h5>
+
+                            <p>Cross-platform mobile experiences from a single codebase.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon javascript">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>JavaScript</h5>
+
+                            <p>Interactive web experiences and modern frontend functionality.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon bootstrap">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>Bootstrap</h5>
+
+                            <p>Responsive layouts and efficient interface development.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon database">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>Databases</h5>
+
+                            <p>MySQL and PostgreSQL for reliable application data.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="stack-card">
+
+                        <div class="stack-icon cpp">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>C++</h5>
+
+                            <p>Algorithms, problem solving and performance-focused programming.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+
+        <div class="container">
+
+            <div class="projects-heading">
+
+                <div class="section-header mb-0">
+
+                    <span class="section-label">03 / SELECTED WORK</span>
+
+                    <h2>
+                        Things I've
+                        <span>built.</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTER -->
+
+            <div class="project-filters">
+
+                <button class="btn-filter active" data-filter="all">All</button>
+
+                <button class="btn-filter" data-filter="web">Web Apps</button>
+
+                <button class="btn-filter" data-filter="enterprise">Systems</button>
+
+                <button class="btn-filter" data-filter="mobile">Mobile</button>
+
+            </div>
+
 
             <div class="row g-4" id="projects-grid">
-                <!-- Project 1 (Web) -->
+
+                <!-- PROJECT 1 -->
+
                 <div class="col-lg-4 col-md-6 project-item" data-category="web">
-                    <div class="glass-card rounded-4 border-glow overflow-hidden h-100 d-flex flex-column card-hover">
-                        <div class="project-header p-4 pb-0">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span
-                                    class="badge badge-success text-success-cool border border-success border-opacity-25 rounded-pill fs-8">Live
-                                    Platform</span>
-                                <i class="fa-solid fa-globe text-cool-slate fs-5"></i>
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div class="project-type">
+
+                                <span class="project-status"></span>
+
+                                LIVE PROJECT
+
                             </div>
-                            <h4 class="fw-extrabold text-white mb-2 tracking-tight">ENTH Tours & Travel</h4>
-                            <p class="fs-7 text-cool-slate">A highly responsive commercial portal engineered for package
-                                showcases, booking inquiries, and secure administration.</p>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </div>
-                        <div class="p-4 pt-0 mt-auto">
-                            <div class="d-flex flex-wrap gap-2 mb-3 pt-3 border-top border-slate">
-                                <span class="tech-tag">laravel</span>
-                                <span class="tech-tag">Bootstrap</span>
-                                <span class="tech-tag">mysql</span>
+
+                        <div class="project-content">
+
+                            <span class="project-index">01</span>
+
+                            <h3>ENTH Tours & Travel</h3>
+
+                            <p>
+
+                                A tourism platform designed for package discovery,
+                                booking inquiries, destination management and administration.
+
+                            </p>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <div class="tech-list">
+
+                                <span>Laravel</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+
                             </div>
-                            <a href="https://enthtours.com/"
-                                class="btn btn-outline-slate btn-sm rounded-pill w-100 fs-8 fw-semibold">Explore Now</a>
+
+                            <a href="https://enthtours.com/" target="_blank">
+
+                                Visit Project
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
                         </div>
-                    </div>
+
+                    </article>
+
                 </div>
 
-                <!-- Project 2 (Enterprise) -->
+
+                <!-- PROJECT 2 -->
+
                 <div class="col-lg-4 col-md-6 project-item" data-category="enterprise">
-                    <div class="glass-card rounded-4 border-glow overflow-hidden h-100 d-flex flex-column card-hover">
-                        <div class="project-header p-4 pb-0">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span
-                                    class="badge badge-primary text-primary-cool border border-primary border-opacity-25 rounded-pill fs-8">Retail
-                                    Operations</span>
-                                <i class="fa-solid fa-store text-cool-slate fs-5"></i>
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div class="project-type">
+
+                                <span class="project-status blue"></span>
+
+                                ENTERPRISE
+
                             </div>
-                            <h4 class="fw-extrabold text-white mb-2 tracking-tight">Shop Management Software</h4>
-                            <p class="fs-7 text-cool-slate">An enterprise-level operational hub designed to centralize
-                                inventory tracking, real-time analytics, and financial reporting.</p>
+
+                            <i class="fa-solid fa-store"></i>
+
                         </div>
-                        <div class="p-4 pt-0 mt-auto">
-                            <div class="d-flex flex-wrap gap-2 mb-3 pt-3 border-top border-slate">
-                                <span class="tech-tag">react js</span>
-                                <span class="tech-tag">javascript</span>
-                                <span class="tech-tag">postsql</span>
+
+                        <div class="project-content">
+
+                            <span class="project-index">02</span>
+
+                            <h3>Shop Management System</h3>
+
+                            <p>
+
+                                A centralized platform for managing inventory,
+                                operations, analytics and financial reporting.
+
+                            </p>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <div class="tech-list">
+
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>PostgreSQL</span>
+
                             </div>
-                            <a href="#contact"
-                                class="btn btn-outline-slate btn-sm rounded-pill w-100 fs-8 fw-semibold">Explore in GitHub</a>
+
+                            <a href="#contact">
+
+                                Discuss Project
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
                         </div>
-                    </div>
+
+                    </article>
+
                 </div>
 
-                <!-- Project 3 (Mobile) -->
+
+                <!-- PROJECT 3 -->
+
                 <div class="col-lg-4 col-md-6 project-item" data-category="mobile">
-                    <div class="glass-card rounded-4 border-glow overflow-hidden h-100 d-flex flex-column card-hover">
-                        <div class="project-header p-4 pb-0">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span
-                                    class="badge badge-info text-info-cool border border-info border-opacity-25 rounded-pill fs-8">Medical
-                                    Tech</span>
-                                <i class="fa-solid fa-hospital text-cool-slate fs-5"></i>
+
+                    <article class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div class="project-type">
+
+                                <span class="project-status purple"></span>
+
+                                MOBILE
+
                             </div>
-                            <h4 class="fw-extrabold text-white mb-2 tracking-tight">Medical Management Hub</h4>
-                            <p class="fs-7 text-cool-slate">A secure healthcare ecosystem focused on HIPAA-compliant
-                                patient records, smart appointment scheduling, and pharmacy stock control.</p>
+
+                            <i class="fa-solid fa-mobile-screen"></i>
+
                         </div>
-                        <div class="p-4 pt-0 mt-auto">
-                            <div class="d-flex flex-wrap gap-2 mb-3 pt-3 border-top border-slate">
-                                <span class="tech-tag">react js</span>
-                                <span class="tech-tag">responsive application</span>
-                                <span class="tech-tag">PostgreSQL</span>
+
+                        <div class="project-content">
+
+                            <span class="project-index">03</span>
+
+                            <h3>Medical Management Hub</h3>
+
+                            <p>
+
+                                A healthcare-oriented system focused on appointments,
+                                patient workflows and organized pharmacy management.
+
+                            </p>
+
+                        </div>
+
+                        <div class="project-footer">
+
+                            <div class="tech-list">
+
+                                <span>React</span>
+                                <span>Responsive UI</span>
+                                <span>PostgreSQL</span>
+
                             </div>
-                            <a href="#contact"
-                                class="btn btn-outline-slate btn-sm rounded-pill w-100 fs-8 fw-semibold">Explore in GitHub</a>
+
+                            <a href="#contact">
+
+                                Discuss Project
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
                         </div>
-                    </div>
+
+                    </article>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-obsidian position-relative">
-        <div class="contact-bg-glow"></div>
-        <div class="container py-lg-5 position-relative z-1">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 text-center text-lg-start">
-                    <span class="text-gradient fw-bold text-uppercase fs-7 tracking-wider">Acquisition</span>
-                    <h2 class="display-5 fw-extrabold text-white mt-1 mb-3 lh-sm tracking-tight">Partner for Digital
-                        Acceleration</h2>
-                    <p class="text-cool-slate fw-medium mb-4 max-w-650 mx-auto mx-lg-0">
-                        I am focused on delivering high-fidelity applications that align with complex business
-                        objectives. Let's discuss how my expertise can accelerate your product roadmap.
-                    </p>
 
-                    <div
-                        class="d-flex flex-column gap-3 mb-4 max-w-650 mx-auto mx-lg-0 align-items-center align-items-lg-start">
-                        <div class="d-flex align-items-center gap-3">
-                            <div
-                                class="icon-box-sm bg-primary-dark text-primary-cool rounded-circle border border-primary border-opacity-25">
-                                <i class="fa-solid fa-envelope fs-7"></i>
-                            </div>
-                            <div>
-                                <span class="fs-8 text-cool-slate d-block">Request a Consultation</span>
-                                <a href="mailto:shayangutum@gmail.com"
-                                    class="text-white text-decoration-none fw-semibold">shayangutum@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-                            <div
-                                class="icon-box-sm bg-primary-dark text-primary-cool rounded-circle border border-primary border-opacity-25">
-                                <i class="fa-solid fa-check-double fs-7"></i>
-                            </div>
-                            <div>
-                                <span class="fs-8 text-cool-slate d-block">Status</span>
-                                <span class="text-white fw-semibold">Available for Selective Projects</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
 
-                    <div class="d-flex gap-3 fs-5 justify-content-center justify-content-lg-start">
-                        <a href="{{'https://github.com/shayangutum-cell'}}" target="_blank"
-                            class="icon-box-sm bg-dark-subtle text-cool-slate border border-slate rounded-circle hover-glow"><i
-                                class="fa-brands fa-github fs-6"></i></a>
-                        <a href="#" target="_blank"
-                            class="icon-box-sm bg-dark-subtle text-cool-slate border border-slate rounded-circle hover-glow"><i
-                                class="fa-brands fa-linkedin-in fs-6"></i></a>
-                    </div>
-                </div>
-
-                <!-- Updated Contact Form with Native Laravel Processing -->
-                <div class="col-lg-7">
-                    <div class="glass-card p-4 p-md-5 rounded-5 border-glow">
-
-                        <!-- Success Alert Message -->
-                        @if(session('success'))
-                            <div class="alert alert-success bg-success text-white border-0 mb-4 rounded-3">
-                                <i class="fa-solid fa-circle-check me-2"></i>{{ session('success') }}
-                            </div>
-                        @endif
-
-                        <form action="{{ route('contact.send') }}" method="POST" id="portfolio-contact-form">
-                            @csrf
-
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label text-white fs-7 fw-semibold">Full Name</label>
-                                    <input type="text" name="name" id="form-name" class="form-control custom-input"
-                                        placeholder="Consultation Request" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label text-white fs-7 fw-semibold">Business Email</label>
-                                    <input type="email" name="email" id="form-email" class="form-control custom-input"
-                                        placeholder="name@company.com" required>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label text-white fs-7 fw-semibold">Engagement Type</label>
-                                    <select name="engagement_type" id="form-engagement"
-                                        class="form-select custom-input fs-7 text-cool-slate">
-                                        <option value="Full-Stack Application Development">Full-Stack Application
-                                            Development</option>
-                                        <option value="Cross-Platform Mobile (Flutter)">Cross-Platform Mobile (Flutter)
-                                        </option>
-                                        <option value="Enterprise Software Solutions">Enterprise Software Solutions
-                                        </option>
-                                        <option value="Technical Consultation/Partnership">Technical
-                                            Consultation/Partnership</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label text-white fs-7 fw-semibold">Brief Project Summary</label>
-                                    <textarea name="message" id="form-message"
-                                        class="form-control custom-input fs-7" rows="4"
-                                        placeholder="Briefly describe your objectives and key requirements..."
-                                        required></textarea>
-                                </div>
-                                <div class="col-12 mt-4 pt-2">
-                                    <button type="submit"
-                                        class="btn btn-gradient-primary btn-lg rounded-pill w-100 shadow-glow fw-bold fs-7 py-3">
-                                        <i class="fa-solid fa-paper-plane me-2"></i>Request Professional Consultation
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-obsidian-deeper border-top border-slate text-center">
         <div class="container">
-            <p class="fs-7 text-cool-slate mb-0">&copy; <span id="year"></span> <strong>Shayan Ali</strong>. Engineered
-                for clarity, speed, and client value.</p>
+
+            <div class="contact-wrapper">
+
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-5">
+
+                        <span class="section-label">04 / CONTACT</span>
+
+                        <h2 class="contact-title">
+
+                            Have a project
+                            <span>in mind?</span>
+
+                        </h2>
+
+                        <p class="contact-description">
+
+                            If you're building a web application, platform, or
+                            digital product, let's discuss the idea and explore
+                            the right technical direction.
+
+                        </p>
+
+
+                        <div class="contact-info">
+
+                            <div class="contact-item">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <div>
+
+                                    <span>EMAIL</span>
+
+                                    <a href="mailto:shayangutum@gmail.com">
+                                        shayangutum@gmail.com
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="contact-item">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <span>STATUS</span>
+
+                                    <strong>Available for Projects</strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="social-links">
+
+                            <a href="https://github.com/shayangutum-cell" target="_blank">
+
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+
+                            <a href="#" target="_blank">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM -->
+
+                    <div class="col-lg-7">
+
+                        <div class="contact-form-card">
+
+                            @if(session('success'))
+
+                                <div class="alert alert-success border-0 mb-4">
+
+                                    <i class="fa-solid fa-circle-check me-2"></i>
+
+                                    {{ session('success') }}
+
+                                </div>
+
+                            @endif
+
+
+                            <form action="{{ route('contact.send') }}"
+                                method="POST"
+                                id="portfolio-contact-form">
+
+                                @csrf
+
+                                <div class="row g-4">
+
+                                    <div class="col-md-6">
+
+                                        <label>Full Name</label>
+
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form-control custom-input"
+                                            placeholder="Your name"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="col-md-6">
+
+                                        <label>Email Address</label>
+
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            class="form-control custom-input"
+                                            placeholder="you@example.com"
+                                            required>
+
+                                    </div>
+
+
+                                    <div class="col-12">
+
+                                        <label>Project Type</label>
+
+                                        <select
+                                            name="engagement_type"
+                                            class="form-select custom-input">
+
+                                            <option value="Full-Stack Application Development">
+                                                Full-Stack Application
+                                            </option>
+
+                                            <option value="Cross-Platform Mobile Development">
+                                                Mobile Application
+                                            </option>
+
+                                            <option value="Enterprise Software">
+                                                Enterprise Software
+                                            </option>
+
+                                            <option value="Technical Consultation">
+                                                Technical Consultation
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+
+                                    <div class="col-12">
+
+                                        <label>Tell me about your project</label>
+
+                                        <textarea
+                                            name="message"
+                                            class="form-control custom-input"
+                                            rows="5"
+                                            placeholder="Describe your idea, goals, or requirements..."
+                                            required></textarea>
+
+                                    </div>
+
+
+                                    <div class="col-12">
+
+                                        <button
+                                            type="submit"
+                                            class="submit-button">
+
+                                            <span class="button-text">
+
+                                                Send Message
+
+                                                <i class="fa-solid fa-arrow-right"></i>
+
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <span>
+                    © <span id="year"></span> Shayan Ali
+                </span>
+
+                <span class="footer-code">
+                    Designed & built with code.
+                </span>
+
+            </div>
+
+        </div>
+
     </footer>
 
-    <!-- Bootstrap 5.3 JS -->
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Custom JS -->
     <script src="{{ asset('js/script.js') }}"></script>
+
 </body>
 
 </html>
