@@ -381,9 +381,11 @@
                         <div class="project-footer">
                             <div class="tech-list">
                                 <span>javascrip</span>
-                                <span>Bootstrap</span>
+                                <span>html</span>
+                                <span>css</span>
+                                <span>node js</span>
                             </div>
-                            <a href="#" target="_blank">
+                            <a href="https://github.com/shayangutum-cell/vertual-university.git" target="_blank">
                                 visit project in github
                                 <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
