@@ -372,21 +372,19 @@
 
                         <div class="project-content">
                             <span class="project-index">01</span>
-                            <h3>ENTH Tours & Travel</h3>
+                            <h3>Vertual university</h3>
                             <p>
-                                A tourism platform designed for package discovery,
-                                booking inquiries, destination management and administration.
+                                A frontend platform code which is designed for the website of university.
                             </p>
                         </div>
 
                         <div class="project-footer">
                             <div class="tech-list">
-                                <span>Laravel</span>
-                                <span>MySQL</span>
+                                <span>javascrip</span>
                                 <span>Bootstrap</span>
                             </div>
-                            <a href="https://enthtours.com/" target="_blank">
-                                Visit Project
+                            <a href="#" target="_blank">
+                                visit project in github
                                 <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -406,21 +404,19 @@
 
                         <div class="project-content">
                             <span class="project-index">02</span>
-                            <h3>Shop Management System</h3>
+                            <h3>AI-assistant</h3>
                             <p>
-                                A centralized platform for managing inventory,
-                                operations, analytics and financial reporting.
+                                AI , which can make your work easy .
                             </p>
                         </div>
 
                         <div class="project-footer">
                             <div class="tech-list">
                                 <span>React</span>
-                                <span>JavaScript</span>
-                                <span>PostgreSQL</span>
+                                <span>Python</span>
                             </div>
                             <a href="#contact">
-                                Discuss Project
+                                visit code in github
                                 <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -440,21 +436,20 @@
 
                         <div class="project-content">
                             <span class="project-index">03</span>
-                            <h3>Medical Management Hub</h3>
+                            <h3>quiz code app</h3>
                             <p>
-                                A healthcare-oriented system focused on appointments,
-                                patient workflows and organized pharmacy management.
+                                App which can help in to make the quiz system easy.
                             </p>
                         </div>
 
                         <div class="project-footer">
                             <div class="tech-list">
-                                <span>React</span>
-                                <span>Responsive UI</span>
-                                <span>PostgreSQL</span>
+                                <span>flutter</span>
+                                <span>laravel</span>
+                                <span>mysql</span>
                             </div>
                             <a href="#contact">
-                                Discuss Project
+                                view project in gitHub
                                 <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
