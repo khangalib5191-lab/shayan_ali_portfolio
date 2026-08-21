@@ -9,18 +9,18 @@
 
     <link rel="icon" type="image/png" href="{{ asset('assets/shayan-ali.png') }}">
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- FontAwesome -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Custom CSS -->
+    <!-- Custom Style -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
@@ -38,7 +38,8 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top portfolio-nav">
         <div class="container">
             <a class="navbar-brand brand-logo" href="#about">
-                <span class="brand-mark">&lt;/&gt;</span>Shayan Ali
+                <span class="brand-mark">&lt;/&gt;</span>
+                Shayan Ali
             </a>
 
             <button class="navbar-toggler custom-toggler border-0 shadow-none"
@@ -66,7 +67,7 @@
 
                 <a href="#contact" class="nav-cta">
                     Let's Work
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
                 </a>
             </div>
         </div>
@@ -74,11 +75,9 @@
 
     <!-- HERO SECTION -->
     <header id="about" class="hero-section">
-        <div class="hero-grid"></div>
-
-        <div class="container hero-container">
+        <div class="container">
             <div class="row align-items-center g-5">
-                
+
                 <!-- HERO CONTENT -->
                 <div class="col-lg-7">
                     <div class="availability-badge">
@@ -100,11 +99,11 @@
                     <div class="hero-actions">
                         <a href="#projects" class="btn-primary-custom">
                             View Projects
-                            <i class="fa-solid fa-arrow-down"></i>
+                            <i class="fa-solid fa-arrow-down ms-1"></i>
                         </a>
                         <a href="#contact" class="btn-secondary-custom">
                             Contact Me
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i class="fa-solid fa-paper-plane ms-1"></i>
                         </a>
                     </div>
 
@@ -120,7 +119,7 @@
                         </div>
                         <div class="stat-item">
                             <strong>100%</strong>
-                            <span>Clean Architecture Focus</span>
+                            <span>Focused on Clean Solutions</span>
                         </div>
                     </div>
                 </div>
@@ -183,7 +182,7 @@
                         <h4>Structured Development</h4>
                         <p>
                             I focus on maintainable architecture, readable code,
-                            and systems that can scale easily with growing user needs.
+                            and systems that can grow with the project.
                         </p>
                     </div>
                 </div>
@@ -194,8 +193,8 @@
                         <i class="fa-solid fa-bolt"></i>
                         <h4>Efficient Workflow</h4>
                         <p>
-                            Modern engineering tooling and optimized workflows accelerate
-                            testing, prototyping, and resilient deployment.
+                            Modern tools and AI-assisted workflows help accelerate
+                            research, testing, prototyping, and development.
                         </p>
                     </div>
                 </div>
@@ -206,8 +205,8 @@
                         <i class="fa-solid fa-code"></i>
                         <h4>Built for Real Use</h4>
                         <p>
-                            The goal is always a robust, usable product — not just an
-                            attractive interface or temporary mockup.
+                            The goal is always a useful product — not just an
+                            attractive interface or a temporary demo.
                         </p>
                     </div>
                 </div>
@@ -376,7 +375,7 @@
                             </div>
                             <a href="https://enthtours.com/" target="_blank">
                                 Visit Project
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </article>
@@ -410,7 +409,7 @@
                             </div>
                             <a href="#contact">
                                 Discuss Project
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </article>
@@ -444,7 +443,7 @@
                             </div>
                             <a href="#contact">
                                 Discuss Project
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
                     </article>
@@ -505,6 +504,7 @@
                     <!-- FORM -->
                     <div class="col-lg-7">
                         <div class="contact-form-card">
+
                             @if(session('success'))
                                 <div class="alert alert-success border-0 mb-4">
                                     <i class="fa-solid fa-circle-check me-2"></i>
@@ -514,6 +514,7 @@
 
                             <form action="{{ route('contact.send') }}" method="POST" id="portfolio-contact-form">
                                 @csrf
+
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <label>Full Name</label>
@@ -549,7 +550,9 @@
                                         </button>
                                     </div>
                                 </div>
+
                             </form>
+
                         </div>
                     </div>
 
@@ -572,11 +575,12 @@
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
+    <!-- Custom JavaScript -->
     <script src="{{ asset('js/script.js') }}"></script>
+
 </body>
 
 </html>

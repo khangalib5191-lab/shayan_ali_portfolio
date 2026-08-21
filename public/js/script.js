@@ -1,29 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* ==========================================
-       PRELOADER EFFORTLESS FADE
+       1. PRELOADER CONTROLLER
     ========================================== */
     const preloader = document.getElementById("preloader");
-
     if (preloader) {
         window.addEventListener("load", () => {
             setTimeout(() => {
                 preloader.style.opacity = "0";
                 preloader.style.visibility = "hidden";
-            }, 400);
+            }, 300);
         });
     }
 
     /* ==========================================
-       AUTO-UPDATE FOOTER YEAR
+       2. AUTOMATIC FOOTER YEAR
     ========================================== */
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
+    const yearElement = document.getElementById("year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
     }
 
     /* ==========================================
-       PROJECT CATEGORY FILTERING
+       3. INTERACTIVE PROJECT FILTERING
     ========================================== */
     const filterButtons = document.querySelectorAll(".btn-filter");
     const projectItems = document.querySelectorAll(".project-item");
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (filter === "all" || category === filter) {
                     project.style.display = "block";
                     project.classList.remove("animate-fade");
-                    void project.offsetWidth; // Trigger reflow for animation
+                    void project.offsetWidth; // Force re-flow for animation reset
                     project.classList.add("animate-fade");
                 } else {
                     project.style.display = "none";
@@ -51,20 +50,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /* ==========================================
-       CONTACT FORM SUBMIT STATE
+       4. FORM SUBMIT STATE MANAGEMENT
     ========================================== */
     const contactForm = document.getElementById("portfolio-contact-form");
-
     if (contactForm) {
         contactForm.addEventListener("submit", () => {
             const submitButton = contactForm.querySelector("button[type='submit']");
-
             if (submitButton) {
                 submitButton.disabled = true;
                 submitButton.innerHTML = `
                     <span class="button-text">
-                        <i class="fa-solid fa-circle-notch fa-spin me-2"></i>
-                        Sending Message...
+                        <i class="fa-solid fa-spinner fa-spin me-2"></i> Processing...
                     </span>
                 `;
             }
@@ -72,17 +68,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ==========================================
-       ACTIVE NAV LINK INTERSECTION OBSERVER
+       5. ACTIVE NAV HIGHLIGHTER (OBSERVER)
     ========================================== */
     const sections = document.querySelectorAll("section, header");
     const navLinks = document.querySelectorAll(".nav-link");
 
     const observer = new IntersectionObserver(
-        entries => {
+        (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const id = entry.target.getAttribute("id");
-
                     navLinks.forEach(link => {
                         link.classList.remove("active");
                         if (link.getAttribute("href") === `#${id}`) {
@@ -98,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 
     /* ==========================================
-       AUTO CLOSE MOBILE NAV ON SELECTION
+       6. AUTO-CLOSE MOBILE NAVIGATION
     ========================================== */
     const navbarCollapse = document.getElementById("navbarNav");
     const mobileNavLinks = document.querySelectorAll("#navbarNav .nav-link, #navbarNav .nav-cta");
@@ -106,12 +101,30 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNavLinks.forEach(link => {
         link.addEventListener("click", () => {
             if (window.innerWidth < 992 && navbarCollapse.classList.contains("show")) {
-                const collapse = bootstrap.Collapse.getInstance(navbarCollapse);
-                if (collapse) {
-                    collapse.hide();
+                const bootstrapCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bootstrapCollapse) {
+                    bootstrapCollapse.hide();
                 }
             }
         });
     });
+
+    /* ==========================================
+       7. DYNAMIC TILT EFFECT FOR PROFILE CARD
+    ========================================== */
+    const card = document.querySelector('.developer-card');
+    if (card && window.innerWidth > 991) {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            card.style.transform = `perspective(1000px) rotateX(${-y / 20}deg) rotateY(${x / 20}deg) translateY(-5px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+        });
+    }
 
 });
