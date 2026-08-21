@@ -118,12 +118,37 @@ document.addEventListener("DOMContentLoaded", () => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left - rect.width / 2;
             const y = e.clientY - rect.top - rect.height / 2;
-            
+
             card.style.transform = `perspective(1000px) rotateX(${-y / 20}deg) rotateY(${x / 20}deg) translateY(-5px)`;
         });
 
         card.addEventListener('mouseleave', () => {
             card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+        });
+    }
+
+    /* ==========================================
+   THEME TOGGLE CONTROLLER
+========================================== */
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const currentTheme = localStorage.getItem("portfolio-theme") || "dark";
+
+    // Set initial theme state on load
+    if (currentTheme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            const activeTheme = document.documentElement.getAttribute("data-theme");
+
+            if (activeTheme === "light") {
+                document.documentElement.removeAttribute("data-theme");
+                localStorage.setItem("portfolio-theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+                localStorage.setItem("portfolio-theme", "light");
+            }
         });
     }
 

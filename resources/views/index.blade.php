@@ -12,7 +12,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,9 +44,7 @@
                 Shayan Ali
             </a>
 
-            <button class="navbar-toggler custom-toggler border-0 shadow-none"
-                type="button"
-                data-bs-toggle="collapse"
+            <button class="navbar-toggler custom-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -63,6 +63,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <!-- THEME TOGGLE BUTTON -->
+                    <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+                        <div class="toggle-track">
+                            <span class="toggle-icon sun-icon">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                            <span class="toggle-icon moon-icon">
+                                <i class="fa-solid fa-moon"></i>
+                            </span>
+                            <div class="toggle-thumb"></div>
+                        </div>
+                    </button>
                 </ul>
 
                 <a href="#contact" class="nav-cta">
@@ -518,19 +530,23 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <label>Full Name</label>
-                                        <input type="text" name="name" class="form-control custom-input" placeholder="Your name" required>
+                                        <input type="text" name="name" class="form-control custom-input"
+                                            placeholder="Your name" required>
                                     </div>
 
                                     <div class="col-md-6">
                                         <label>Email Address</label>
-                                        <input type="email" name="email" class="form-control custom-input" placeholder="you@example.com" required>
+                                        <input type="email" name="email" class="form-control custom-input"
+                                            placeholder="you@example.com" required>
                                     </div>
 
                                     <div class="col-12">
                                         <label>Project Type</label>
                                         <select name="engagement_type" class="form-select custom-input">
-                                            <option value="Full-Stack Application Development">Full-Stack Application</option>
-                                            <option value="Cross-Platform Mobile Development">Mobile Application</option>
+                                            <option value="Full-Stack Application Development">Full-Stack Application
+                                            </option>
+                                            <option value="Cross-Platform Mobile Development">Mobile Application
+                                            </option>
                                             <option value="Enterprise Software">Enterprise Software</option>
                                             <option value="Technical Consultation">Technical Consultation</option>
                                         </select>
@@ -538,7 +554,9 @@
 
                                     <div class="col-12">
                                         <label>Tell me about your project</label>
-                                        <textarea name="message" class="form-control custom-input" rows="5" placeholder="Describe your idea, goals, or requirements..." required></textarea>
+                                        <textarea name="message" class="form-control custom-input" rows="5"
+                                            placeholder="Describe your idea, goals, or requirements..."
+                                            required></textarea>
                                     </div>
 
                                     <div class="col-12">
